@@ -1,0 +1,2 @@
+v0.1b   - (Aug 6, 2022)
+        - RELEASE - Initial release of PWRMON! Enjoy. Lots more to be added... keep your ideas and suggestions coming!  
