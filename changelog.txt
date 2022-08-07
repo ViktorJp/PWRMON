@@ -1,3 +1,11 @@
+v0.1b3  - (Aug 7, 2022)
+        - ADDED: Created a 2nd page showing indicators for all of the main functions, solar, grid, home and power-
+          walls. Each progressbar is measured based on values in the setup, including number of powerwalls, max
+          power generation from both solar, and the max load of your home. Also, calculating a runtime based on
+          current battery percentage and current load on the home. An indicator was also added to show the max
+          load your powerwalls can take based on how many powerwalls you have vs. the load in your home.
+        - FIXED: Made a modifcation on the grid ASCII graphic... still not satisfied, but it's getting better.
+
 v0.1b2  - (Aug 7, 2022)
         - FIXED: Main focus is on the UI at this point, and making sure it aligns visually with the stock Tesla app,
           and is functionally/visually in line.  Will be adding more functionality and stats at a later point. ;) 
