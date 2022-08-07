@@ -1,6 +1,9 @@
 v0.1b2  - (Aug 7, 2022)
         - FIXED: Main focus is on the UI at this point, and making sure it aligns visually with the stock Tesla app,
-          and is functionally/visually in line.  Will be adding more functionality and stats at a later point. ;)
+          and is functionally/visually in line.  Will be adding more functionality and stats at a later point. ;) 
+          Changed up the look/feel of the main UI, and making sure that everything looks the same.  I noticed on my
+          first release that there were some differences in the ways that grid, solar and home were being displayed,
+          so now they are more uniform.
 
 v0.1b   - (Aug 6, 2022)
         - RELEASE - Initial release of PWRMON! Enjoy. Lots more to be added... keep your ideas and suggestions coming!  
