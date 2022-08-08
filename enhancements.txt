@@ -1,0 +1,16 @@
+Future Enhancements (Planned)
+-----------------------------
+
+To-Do:
+------
+* Create a page with large numbers for dashboard purposes/viewing & reading from across the room
+* Develop ways of signaling grid outages/on battery visual queues
+
+Completed:
+----------
+
+
+Ideas or Discussion
+-------------------
+If you have any ideas or requests, please don't hesitate to mention them here in the forums for further discussion:
+https://www.snbforums.com/threads/beta-pwrmon-v0-1b3-aug-7-2022-monitor-your-tesla-powerwall-s-solar-grid-home-stats.80203/
