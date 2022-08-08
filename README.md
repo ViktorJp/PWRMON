@@ -7,6 +7,8 @@ PWRMON is a shell script that provides near-realtime stats about your Tesla Powe
 Instead of having to find this information on various different web pages or apps, this tool was built to bring all this info together in one stat dashboard.  Having a 'system' dashboard showing current solar, grid, home and powerwall stats would compliment other dashboard-like scripts greatly (like RTRMON or VPNMON-R2), sitting side-by-side in their own SSH windows to give you everything you need to know with a glance at your screen.
 
 Requirements:
+-------------
+
 1.) You must be running Asus-Merlin firmware, entware and jffs scripts enabled and installed.
 
 2.) You must have a locally accessible Tesla Gateway device, reachable through your LAN (A Tesla Gateway is a device that monitors and distributes power between your solar, grid, home and batteries. It's very possible to run this setup if you only have batteries, or only have solar, but a Gateway device is still necessary)
