@@ -148,17 +148,17 @@ progressbar() {
     if [ ! -z $6 ]; then AltNum=$6; else AltNum=$1; fi
 
     if [ "$5" == "Standard" ]; then
-      if [ $progr -lt 60 ]; then
+      if [ $progr -le 60 ]; then
         printf "${InvGreen}${CWhite}$insertspc${CClear}${CGreen}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
-      elif [ $progr -gt 59 ] && [ $progr -lt 85 ]; then
+      elif [ $progr -gt 60 ] && [ $progr -le 85 ]; then
         printf "${InvYellow}${CBlack}$insertspc${CClear}${CYellow}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
       else
         printf "${InvRed}${CWhite}$insertspc${CClear}${CRed}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
       fi
     elif [ "$5" == "Reverse" ]; then
-      if [ $progr -lt 35 ]; then
+      if [ $progr -le 35 ]; then
         printf "${InvRed}${CWhite}$insertspc${CClear}${CRed}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
-      elif [ $progr -gt 35 ] && [ $progr -lt 85 ]; then
+      elif [ $progr -gt 35 ] && [ $progr -le 85 ]; then
         printf "${InvYellow}${CBlack}$insertspc${CClear}${CYellow}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
       else
         printf "${InvGreen}${CWhite}$insertspc${CClear}${CGreen}${3} [%.${barch}s%.${barsp}s]${CClear} ${CWhite}${InvDkGray}$AltNum ${4} / ${progr}%%\r${CClear}" "$barchars" "$barspaces"
@@ -652,7 +652,7 @@ do_login() {
 
 DisplayPage1 () {
 
-#sitename="My Tesla Site Name"
+sitename="My Tesla Site Name"
 
   clear
   logo
