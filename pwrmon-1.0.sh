@@ -43,7 +43,7 @@ LOGFILE="/jffs/addons/pwrmon.d/pwrmon.log"          # Logfile path/name that cap
 APPPATH="/jffs/scripts/pwrmon.sh"                   # Path to the location of pwrmon.sh
 CFGPATH="/jffs/addons/pwrmon.d/pwrmon.cfg"          # Path to the location of pwrmon.cfg
 DLVERPATH="/jffs/addons/pwrmon.d/version.txt"       # Path to downloaded version from the source repository
-cookie_file="/jffs/scripts/pwrmon.d/pwrmon.cookies"
+cookie_file="/jffs/addons/pwrmon.d/pwrmon.cookies"
 NextPage=1
 UpdateNotify=0
 FromUI=0
@@ -624,6 +624,9 @@ vsetup () {
 
 do_login() {
   # Attempt to login and get an auth cookie to use
+
+{ echo ""
+} > $cookie_file
 
   request_json=$(jq -c -n --arg email "$email" --arg password "$password" '
     {
