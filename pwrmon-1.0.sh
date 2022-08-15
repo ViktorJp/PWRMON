@@ -655,7 +655,7 @@ do_login() {
 
 DisplayPage1 () {
 
-sitename="My Tesla Site Name"
+#sitename="My Tesla Site Name"
 
   clear
   logo
