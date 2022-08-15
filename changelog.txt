@@ -1,3 +1,10 @@
+v1.0    - (Aug 15, 2022)
+        - Initial release of PWRMON!  All bugs and inconsistencies have been resolved as of this first major
+          release, providing the basic functionality of showing powerflows from solar, to/from home, to/from the
+          grid, and to/from your batteries.  The secondary page (by hitting the (N)ext key) shows further details
+          using progress bar views.  Calculations on expected runtime based on current load is displayed on both
+          pages. All complimentary setup, config, view logs, update and uninstall menu pages are in place.
+
 v0.1b3  - (Aug 7, 2022)
         - ADDED: Created a 2nd page showing indicators for all of the main functions, solar, grid, home and power-
           walls. Each progressbar is measured based on values in the setup, including number of powerwalls, max
