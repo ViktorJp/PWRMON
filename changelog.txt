@@ -1,3 +1,14 @@
+v1.1    - (Aug 18, 2022)
+        - MAJOR: Added a major feature on the new 3rd page that displays powerflows for solar, grid, home and
+          battery in large font numbers for the purposes of displaying this on a full-time dashboard in your
+          home. The large fonts are especially welcome so you can read what's happening on your local power
+          grid from across the room. Designed to take advantage of cheap 7" tablets or wall touch displays,
+          to provide a suite of monitoring apps (along with VPNMON-R2 and RTRMON) so you can see what's
+          happening in your environment at all times.
+        - ADDED: Added visual cue notifications on the Power Flow View (page 1) when the grid goes down, or 
+          comes back up, but is not in sync yet with your Gateway device.
+        - FIXED: Minor changes and corrections.
+
 v1.0    - (Aug 15, 2022)
         - Initial release of PWRMON!  All bugs and inconsistencies have been resolved as of this first major
           release, providing the basic functionality of showing powerflows from solar, to/from home, to/from the
