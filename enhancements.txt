@@ -3,13 +3,12 @@ Future Enhancements (Planned)
 
 To-Do:
 ------
-* Create a page with large numbers for dashboard purposes/viewing & reading from across the room
-* Develop ways of signaling grid outages/on battery visual queues
 * Include current battery configuration mode, ie. standby, self-powered, timed, etc.
 
 Completed:
 ----------
-
+* Create a page with large numbers for dashboard purposes/viewing & reading from across the room
+* Develop ways of signaling grid outages/on battery visual queues
 
 Ideas or Discussion
 -------------------
