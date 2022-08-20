@@ -1,3 +1,7 @@
+v1.11   - (TBA)
+        - FIXED: Minor logic changes to successfully use API values coming from the Gateway in order to show
+          Grid down/resyncing messages.
+        
 v1.1    - (Aug 18, 2022)
         - MAJOR: Added a major feature on the new 3rd page that displays powerflows for solar, grid, home and
           battery in large font numbers for the purposes of displaying this on a full-time dashboard in your
