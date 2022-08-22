@@ -1,4 +1,4 @@
-v1.11   - (TBA)
+v1.12   - (TBA)
         - FIXED: Minor logic changes to successfully use API values coming from the Gateway in order to show
           Grid down/resyncing messages.
         - ADDED: Grid down/syncing indicators in the large font view (page 3), switching icons to red, giving
