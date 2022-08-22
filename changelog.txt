@@ -1,6 +1,8 @@
 v1.11   - (TBA)
         - FIXED: Minor logic changes to successfully use API values coming from the Gateway in order to show
           Grid down/resyncing messages.
+        - ADDED: Grid down/syncing indicators in the large font view (page 3), switching icons to red, giving
+          user proper notification when these events happen.
         
 v1.1    - (Aug 18, 2022)
         - MAJOR: Added a major feature on the new 3rd page that displays powerflows for solar, grid, home and
