@@ -1,10 +1,10 @@
-v1.12   - (Aug 24, 2022)
+v1.12   - (August 24, 2022)
         - FIXED: Minor logic changes to successfully use API values coming from the Gateway in order to show
           Grid down/resyncing messages.
         - ADDED: Grid down/syncing indicators in the large font view (page 3), switching icons to red, giving
           user proper notification when these events happen.
         
-v1.1    - (Aug 18, 2022)
+v1.1    - (August 18, 2022)
         - MAJOR: Added a major feature on the new 3rd page that displays powerflows for solar, grid, home and
           battery in large font numbers for the purposes of displaying this on a full-time dashboard in your
           home. The large fonts are especially welcome so you can read what's happening on your local power
@@ -15,14 +15,14 @@ v1.1    - (Aug 18, 2022)
           comes back up, but is not in sync yet with your Gateway device.
         - FIXED: Minor changes and corrections.
 
-v1.0    - (Aug 15, 2022)
+v1.0    - (August 15, 2022)
         - Initial release of PWRMON!  All bugs and inconsistencies have been resolved as of this first major
           release, providing the basic functionality of showing powerflows from solar, to/from home, to/from the
           grid, and to/from your batteries.  The secondary page (by hitting the (N)ext key) shows further details
           using progress bar views.  Calculations on expected runtime based on current load is displayed on both
           pages. All complimentary setup, config, view logs, update and uninstall menu pages are in place.
 
-v0.1b3  - (Aug 7, 2022)
+v0.1b3  - (August 7, 2022)
         - ADDED: Created a 2nd page showing indicators for all of the main functions, solar, grid, home and power-
           walls. Each progressbar is measured based on values in the setup, including number of powerwalls, max
           power generation from both solar, and the max load of your home. Also, calculating a runtime based on
@@ -30,12 +30,12 @@ v0.1b3  - (Aug 7, 2022)
           load your powerwalls can take based on how many powerwalls you have vs. the load in your home.
         - FIXED: Made a modifcation on the grid ASCII graphic... still not satisfied, but it's getting better.
 
-v0.1b2  - (Aug 7, 2022)
+v0.1b2  - (August 7, 2022)
         - FIXED: Main focus is on the UI at this point, and making sure it aligns visually with the stock Tesla app,
           and is functionally/visually in line.  Will be adding more functionality and stats at a later point. ;) 
           Changed up the look/feel of the main UI, and making sure that everything looks the same.  I noticed on my
           first release that there were some differences in the ways that grid, solar and home were being displayed,
           so now they are more uniform.
 
-v0.1b   - (Aug 6, 2022)
+v0.1b   - (August 6, 2022)
         - RELEASE - Initial release of PWRMON! Enjoy. Lots more to be added... keep your ideas and suggestions coming!  
