@@ -4,6 +4,7 @@ Future Enhancements (Planned)
 To-Do:
 ------
 * Include current battery configuration mode, ie. standby, self-powered, timed, etc.
+* add % battery remaining on large font view
 * Add log messages for major events
 
 Completed:
