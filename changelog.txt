@@ -1,5 +1,8 @@
-v1.13   - (TBA)
+v1.15   - (TBA)
         - FIXED: Enhanced some of the look/feel to match the overall colors/theme of the app
+        - ADDED: Included current battery configuration mode, ie. backup, self-powered, and time-based, as
+          well as the percentage of backup reserve that is currently configured.
+        - ADDED: Now displaying the % battery remaining on the large font dashboard view (page 3)
 
 v1.12   - (August 24, 2022)
         - FIXED: Minor logic changes to successfully use API values coming from the Gateway in order to show
