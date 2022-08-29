@@ -3,12 +3,12 @@ Future Enhancements (Planned)
 
 To-Do:
 ------
-* Include current battery configuration mode, ie. standby, self-powered, timed, etc.
-* add % battery remaining on large font view
 * Add log messages for major events
 
 Completed:
 ----------
+* Include current battery configuration mode, ie. standby, self-powered, timed, etc.
+* add % battery remaining on large font view
 * Create a page with large numbers for dashboard purposes/viewing & reading from across the room
 * Develop ways of signaling grid outages/on battery visual queues
 
