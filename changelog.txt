@@ -1,3 +1,7 @@
+v1.16   - (TBA)
+        - ADDED: Capability to go to a (P)revious page like on RTRMON.  You can now flip back and forth
+          between pages, instead of having to run through them all to get to the same point. Yey!
+
 v1.15   - (August 31, 2022)
         - FIXED: Enhanced some of the look/feel to match the overall colors/theme of the app
         - ADDED: Included current battery configuration mode, ie. backup, self-powered, and time-based, as
