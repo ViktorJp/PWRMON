@@ -3,7 +3,7 @@ Future Enhancements (Planned)
 
 To-Do:
 ------
-* Add log messages for major events
+* Build in log trim functionality
 
 Completed:
 ----------
@@ -11,6 +11,7 @@ Completed:
 * add % battery remaining on large font view
 * Create a page with large numbers for dashboard purposes/viewing & reading from across the room
 * Develop ways of signaling grid outages/on battery visual queues
+* Add log messages for major events
 
 Ideas or Discussion
 -------------------
