@@ -1,6 +1,9 @@
-v1.16   - (TBA)
+v1.16   - (September 10, 2022)
         - ADDED: Capability to go to a (P)revious page like on RTRMON.  You can now flip back and forth
           between pages, instead of having to run through them all to get to the same point. Yey!
+        - ADDED: Logging entries for grid outage and grid syncing events.  Depending on the length of your
+          outages, initially, you may want to keep track of the size of your pwrmon.log file, and delete
+          lines as necessary. I will be building in a trimming function at a later date.
 
 v1.15   - (August 31, 2022)
         - FIXED: Enhanced some of the look/feel to match the overall colors/theme of the app
