@@ -4,6 +4,7 @@ Future Enhancements (Planned)
 To-Do:
 ------
 * Build in log trim functionality
+* Build in email notifications based on grid events
 
 Completed:
 ----------
