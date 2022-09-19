@@ -2,9 +2,9 @@ v1.17   - (TBA)
         - ADDED: Email notification capabilities for major grid events: Down, Syncing or Return to Normal.
           Added the necessary setup menu items to record TO:, FROM:, SMTP Server, SMTP Port, Password, etc.
           Please note, this has only been tested on SSL SMTP connections, like smtps://smtp.gmail.com on
-          port 465. Please note #2, in order for you to make use of a service like gmail in a case like
-          this, you will need to obtain an "app password" to provide the necessary authentication using
-          this method.
+          port 465. I can add other methods of authentication if requests are made. Please note #2, in
+          order for you to make use of a service like gmail in a case like this, you will need to obtain
+          an "app password" to provide the necessary authentication using this method.
 
 v1.16   - (September 10, 2022)
         - ADDED: Capability to go to a (P)revious page like on RTRMON.  You can now flip back and forth
