@@ -1,4 +1,4 @@
-v1.17   - (TBA)
+v1.18   - (TBA)
         - ADDED: Email notification capabilities for major grid events: Down, Syncing or Return to Normal.
           Added the necessary setup menu items to record TO:, FROM:, SMTP Server, SMTP Port, Password, etc.
           Please note, this has only been tested on SSL SMTP connections, like smtps://smtp.gmail.com on
@@ -10,6 +10,13 @@ v1.17   - (TBA)
           these types of routers, I would still consider this to be an unsafe method of storage, and could
           still very easily be compromised by someone who knows what they're doing. Only use non-essential
           email accounts to send or receive these emails so you don't risk a primary account compromise!
+        - CHANGED: The behavior of the "pwrmon -screen" command, so that when you execute this commandline
+          parameter, it first will look for orphaned screens and wipe them... then, it will launch PWRMON
+          into a new screen environment, and connect to it. This skips the original behavior where it drops
+          back to a command prompt, and asks the user to connect to the PWRMON screen by requiring the user
+          to run the "screen -r pwrmon" command. If a screen session is already running, and you type
+          "pwrmon -screen", it will then connect to this screen session without requiring any user input.
+          Thanks much to @TITAN for the great suggestion!
 
 v1.16   - (September 10, 2022)
         - ADDED: Capability to go to a (P)revious page like on RTRMON.  You can now flip back and forth
