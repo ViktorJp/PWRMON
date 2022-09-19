@@ -4,7 +4,12 @@ v1.17   - (TBA)
           Please note, this has only been tested on SSL SMTP connections, like smtps://smtp.gmail.com on
           port 465. I can add other methods of authentication if requests are made. Please note #2, in
           order for you to make use of a service like gmail in a case like this, you will need to obtain
-          an "app password" to provide the necessary authentication using this method.
+          an "app password" to provide the necessary authentication using this method. And note #3, your
+          smtp password is encrypted and saved in a config file that resides locally on the router under
+          /jffs/addons/pwrmon.d/pwrmon.cfg, however, please know that due to the security constraints on
+          these types of routers, I would still consider this to be an unsafe method of storage, and could
+          still very easily be compromised by someone who knows what they're doing. Only use non-essential
+          email accounts to send or receive these emails so you don't risk a primary account compromise!
 
 v1.16   - (September 10, 2022)
         - ADDED: Capability to go to a (P)revious page like on RTRMON.  You can now flip back and forth
