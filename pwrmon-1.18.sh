@@ -879,7 +879,7 @@ vconfig () {
                 smtppassword=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pass pass:*TB0c7ksKGWcw22P -pbkdf2)
                 if [ ! -z "$smtppassword1" ]; then smtppassword=$smtppassword1; fi
                 echo -e "${CGreen}Using: $smtppassword${CClear}"
-                secretpwd=$(echo $smtppassword | openssl enc -e -des3 -base64 -pass pass:*TB0c7ksKGWcw22P -pbkdf2)
+                secretpwd=$(echo $smtppassword | openssl enc -e -des3 -base64 -salt -pass pass:*TB0c7ksKGWcw22P -pbkdf2)
                 smtppassword=$secretpwd
                 echo ""
                 read -p 'Enter RCPT TO Email Address: ' smtprecipient1
