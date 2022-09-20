@@ -766,17 +766,17 @@ vconfig () {
       echo -e "${InvDkGray}${CWhite} 7 ${CClear}${CCyan}: Max Home Elec Load (kW)     :"${CGreen}$maxhomeelecload
       echo -e "${InvDkGray}${CWhite} 8 ${CClear}${CCyan}: Enable Email Alerts?        :"${CGreen}$emailalerts
       if [ "$emailalerts" == "Enabled" ]; then
-        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}- Email Address FROM:         :"${CGreen}$smtpusername
-        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}- Email Address Acct Pwd:     :${CGreen}[ENCRYPTED]"
-        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}- Email Address RCPT TO:      :"${CGreen}$smtprecipient
-        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}- SMTP Server Name:           :"${CGreen}$smtpserver
-        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}- SMTP Server Port:           :"${CGreen}$smtpport
+        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}-  Email Address FROM:        :"${CGreen}$smtpusername
+        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}-  Email Address Acct Pwd:    :${CGreen}[ENCRYPTED]"
+        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}-  Email Address RCPT TO:     :"${CGreen}$smtprecipient
+        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}-  SMTP Server Name:          :"${CGreen}$smtpserver
+        echo -e "${InvDkGray}${CWhite} |-${CClear}${CCyan}-  SMTP Server Port:          :"${CGreen}$smtpport
       else
-        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}- Email Address FROM:         :"${CDkGray}$smtpusername
-        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}- Email Address Acct Pwd:     :${CDkGray}$[ENCRYPTED]"
-        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}- Email Address RCPT TO:      :"${CDkGray}$smtprecipient
-        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}- SMTP Server Name:           :"${CDkGray}$smtpserver
-        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}- SMTP Server Port:           :"${CDkGray}$smtpport
+        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}-  Email Address FROM:        :"${CDkGray}$smtpusername
+        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}-  Email Address Acct Pwd:    :${CDkGray}$[ENCRYPTED]"
+        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}-  Email Address RCPT TO:     :"${CDkGray}$smtprecipient
+        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}-  SMTP Server Name:          :"${CDkGray}$smtpserver
+        echo -e "${InvDkGray}${CWhite} | ${CClear}${CDkGray}-  SMTP Server Port:          :"${CDkGray}$smtpport
       fi
       echo -e "${InvDkGray}${CWhite} | ${CClear}"
       echo -e "${InvDkGray}${CWhite} s ${CClear}${CCyan}: Save & Exit"
