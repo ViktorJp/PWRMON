@@ -1,4 +1,4 @@
-v1.18   - (TBA)
+v1.18   - (September 19, 2022)
         - ADDED: Email notification capabilities for major grid events: Down, Syncing or Return to Normal.
           Added the necessary setup menu items to record TO:, FROM:, SMTP Server, SMTP Port, Password, etc.
           Please note, this has only been tested on SSL SMTP connections, like smtps://smtp.gmail.com on
