@@ -4,8 +4,9 @@ v1.19   - (TBA)
           default, or came along with an Entware install by default.  Now, when going into Setup -> Config,
           the script will check for the existence of JQ, and will prompt an install if it's not already
           present under /opt/bin. JQ is necessary for pulling data from your Tesla Powerwall Gateway API
-          for the purposes of extracting current power stats. Thanks to @monakh for noticing this behavior
-          on a fresh install of VPNMON-R2!
+          for the purposes of extracting current power stats. Added a check when the script starts up to
+          ensure that all prerequisites are in place before running the script. Thanks to @monakh for
+          noticing this behavior with JQ on a fresh install of VPNMON-R2!
 
 v1.18   - (September 19, 2022)
         - ADDED: Email notification capabilities for major grid events: Down, Syncing or Return to Normal.
