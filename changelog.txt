@@ -1,3 +1,12 @@
+v1.19   - (TBA)
+        - CHANGED: Included JQ as part of the prerequisites needed to be installed when PWRMON is set up
+          for the first time. This was my error, thinking that the JQ tool was either already installed by
+          default, or came along with an Entware install by default.  Now, when going into Setup -> Config,
+          the script will check for the existence of JQ, and will prompt an install if it's not already
+          present under /opt/bin. JQ is necessary for pulling data from your Tesla Powerwall Gateway API
+          for the purposes of extracting current power stats. Thanks to @monakh for noticing this behavior
+          on a fresh install of VPNMON-R2!
+
 v1.18   - (September 19, 2022)
         - ADDED: Email notification capabilities for major grid events: Down, Syncing or Return to Normal.
           Added the necessary setup menu items to record TO:, FROM:, SMTP Server, SMTP Port, Password, etc.
