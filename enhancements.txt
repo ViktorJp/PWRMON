@@ -4,11 +4,11 @@ Future Enhancements (Planned)
 To-Do:
 ------
 * Build in log trim functionality
-* Build in email notifications based on grid events
 * Autorotate through pages
 
 Completed:
 ----------
+* Build in email notifications based on grid events
 * Include current battery configuration mode, ie. standby, self-powered, timed, etc.
 * add % battery remaining on large font view
 * Create a page with large numbers for dashboard purposes/viewing & reading from across the room
