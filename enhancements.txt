@@ -5,6 +5,7 @@ To-Do:
 ------
 * Build in log trim functionality
 * Autorotate through pages
+* Build in a weather forecast for 3-5 days
 
 Completed:
 ----------
