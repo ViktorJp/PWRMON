@@ -1,4 +1,13 @@
-v1.19   - (TBA)
+v1.20   - (September 29, 2022)
+        - MAJOR: In recognition of major Hurricane Ian, I have integrated a 3 day weather forecast that
+          includes today's current conditions, giving you all necessary info to get a good idea what's
+          going to happen with the weather. Forecast includes current/upcoming conditions, temperature,
+          and wind direction/speed. Ability to see detailed conditions expands on the current and
+          upcoming conditions, including chances of rain. This functionality uses a free API from
+          weather.gov, and determines your location from the coordinates of your WAN exit IP to determine
+          the weather for your local region. It will be close, but may not be exactly the weather that is
+          happening on top of your house.  Will look into allowing you to add custom longitude and
+          latitude coordinates in the near future.
         - CHANGED: Included JQ as part of the prerequisites needed to be installed when PWRMON is set up
           for the first time. This was my error, thinking that the JQ tool was either already installed by
           default, or came along with an Entware install by default.  Now, when going into Setup -> Config,
