@@ -3,6 +3,7 @@ Future Enhancements (Planned)
 
 To-Do:
 ------
+* handle unexpected server error results in weather API returns
 * Build in log trim functionality
 * Autorotate through pages
 
