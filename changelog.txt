@@ -1,4 +1,4 @@
-v1.21   - (TBA)
+v1.21   - (October 3, 2022)
         - ADDED: Thanks to the excellent suggestion of @JGrana, I have added a secondary email address
           for the purposes of sending SMS/Text messages to your phone during major Powerwall events!
           The format for the email address must be: 1234567890@carrierdomainname.com, or as specified
@@ -6,9 +6,9 @@ v1.21   - (TBA)
           to you via email. Please see this website for further info and format of your carriers
           SMS/Text email format: https://avtech.com/articles/138/list-of-email-to-sms-addresses/
         - FIXED: Detection of malformed API returns from weather.gov, preventing nulls and other errors,
-          and requests a retransmission in order to present valid weather data.
+          in order to present valid weather data each and every time.
         - FIXED: Runtime calculations when greater than 3 digits would screw up the alignment of the
-          visualizations, and capped max runtime amounts at +99.9h.  
+          visualizations, and capped max runtime remaining amounts at +99.9h.  
 
 v1.20   - (September 29, 2022)
         - MAJOR: In recognition of major Hurricane Ian, I have integrated a 3 day weather forecast that
