@@ -7,6 +7,8 @@ v1.21   - (TBA)
           SMS/Text email format: https://avtech.com/articles/138/list-of-email-to-sms-addresses/
         - FIXED: Detection of malformed API returns from weather.gov, preventing nulls and other errors,
           and requests a retransmission in order to present valid weather data.
+        - FIXED: Runtime calculations when greater than 3 digits would screw up the alignment of the
+          visualizations, and capped max runtime amounts at +99.9h.  
 
 v1.20   - (September 29, 2022)
         - MAJOR: In recognition of major Hurricane Ian, I have integrated a 3 day weather forecast that
