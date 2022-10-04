@@ -1,3 +1,7 @@
+v1.22   - (TBA)
+        - FIXED: the -wipe SCREEN command is now being checked earlier before the script determines how
+          it is going to initiate a SCREEN session.
+
 v1.21   - (October 3, 2022)
         - ADDED: Thanks to the excellent suggestion of @JGrana, I have added a secondary email address
           for the purposes of sending SMS/Text messages to your phone during major Powerwall events!
