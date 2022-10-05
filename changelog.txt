@@ -1,6 +1,8 @@
-v1.22   - (TBA)
+v1.22   - (October 5, 2022)
         - FIXED: the -wipe SCREEN command is now being checked earlier before the script determines how
           it is going to initiate a SCREEN session.
+        - FIXED: Further refinement on fixing malformed API returns from weather.gov in order to prevent
+          null results from tainting the rest of the results. Seems to be good now!
 
 v1.21   - (October 3, 2022)
         - ADDED: Thanks to the excellent suggestion of @JGrana, I have added a secondary email address
