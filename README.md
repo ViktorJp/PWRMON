@@ -9,7 +9,7 @@ Instead of having to find this information on various different web pages or app
 Requirements:
 -------------
 
-1.) This has been written and tested on an Asus RT-AC86U WiFi Router. You must be running custom Asus-Merlin firmware (https://www.snbforums.com/threads/about-asuswrt-merlin-custom-firmware-for-asus-routers.7846/), Entware (installed by running AMTM from an SSH command prompt) and jffs scripts enabled and installed (using the Asus-Merlin router UI -> Administration -> System).
+1.) This has been written and tested on an Asus RT-AC86U WiFi Router, and should be compatible with the vast majority of Asus routers out there that are compatible with custom Asus-Merlin firmware. Your router must be running custom Asus-Merlin firmware (https://www.snbforums.com/threads/about-asuswrt-merlin-custom-firmware-for-asus-routers.7846/), Entware (installed by running AMTM from an SSH command prompt) and jffs scripts enabled and installed (using the Asus-Merlin router UI -> Administration -> System).
 
 2.) You must have a locally accessible Tesla Gateway device, reachable through your LAN (A Tesla Gateway is a device that monitors and distributes power between your solar, grid, home and batteries. It's very possible to run this setup if you only have batteries, or only have solar, but a Gateway device is still necessary)
 
