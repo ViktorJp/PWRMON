@@ -6,7 +6,7 @@ v1.25   - (November 20, 2022)
           progress bar under the config menu, item #9. For those who found it annoying or distracting, enjoy!
         - CHANGED: As with VPNMON-R2 and RTRMON, now when you make changes to the config while running the program, upon return
           to the main UI, your changes will automatically be applied without needing to exit and restart.
-        - CHANGED: Modified the update functionality to allow you to force-update your current RTRMON script with the current
+        - CHANGED: Modified the update functionality to allow you to force-update your current PWRMON script with the current
           build available on github.
         - MINOR: Small wording changes around the setup menu when it comes to installing Entware prerequisites. Added a check
           when the script starts up to ensure that all prerequisites are in place before running the script.
