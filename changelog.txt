@@ -1,8 +1,15 @@
 v1.23   - (BETA TBA)
-        - MINOR: Small wording changes around the setup menu when it comes to installing Entware prerequisites. Added a check
-          when the script starts up to ensure that all prerequisites are in place before running the script.
+        - ADDED: An auto-rotate option is now available by hitting the (R)otate pgs option from any of the currently 3 other
+          stats screens.  When doing so, PWRMON will automatically advance to the next page, and loop through each until you
+          disable this feature by again hitting the (R)otate pgs key.
+        - ADDED: An option to choose a more minimalist progress bar. Thanks to @ugandy, you can specify if you want the standard
+          or minimalist progress bar under the config menu, item #12. For those who found it annoying or distracting, enjoy!
         - CHANGED: Modified the update functionality to allow you to force-update your current RTRMON script with the current
           build available on github.
+        - MINOR: Small wording changes around the setup menu when it comes to installing Entware prerequisites. Added a check
+          when the script starts up to ensure that all prerequisites are in place before running the script.
+        - MINOR: Added the "kW" measurement notation next to the large font numbers on page 3, in case there is any confusion
+          on what those digits stand for. ;)
 
 v1.22   - (October 5, 2022)
         - FIXED: the -wipe SCREEN command is now being checked earlier before the script determines how it is going to initiate
