@@ -2,8 +2,8 @@ v1.23   - (BETA TBA)
         - ADDED: An auto-rotate option is now available by hitting the (R)otate pgs option from any of the currently 3 other
           stats screens.  When doing so, PWRMON will automatically advance to the next page, and loop through each until you
           disable this feature by again hitting the (R)otate pgs key.
-        - ADDED: An option to choose a more minimalist progress bar. Thanks to @ugandy, you can specify if you want the standard
-          or minimalist progress bar under the config menu, item #12. For those who found it annoying or distracting, enjoy!
+        - ADDED: An option to choose a more minimalist progress bar. You can specify if you want the standard or minimalist
+          progress bar under the config menu, item #9. For those who found it annoying or distracting, enjoy!
         - CHANGED: As with VPNMON-R2 and RTRMON, now when you make changes to the config while running the program, upon return
           to the main UI, your changes will automatically be applied without needing to exit and restart.
         - CHANGED: Modified the update functionality to allow you to force-update your current RTRMON script with the current
