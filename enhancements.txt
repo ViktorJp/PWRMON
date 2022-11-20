@@ -4,10 +4,10 @@ Future Enhancements (Planned)
 To-Do:
 ------
 * Build in log trim functionality
-* Autorotate through pages
 
 Completed:
 ----------
+* Autorotate through pages
 * handle unexpected server error results in weather API returns
 * Build in a weather forecast for 3-5 days
 * Build in email notifications based on grid events
