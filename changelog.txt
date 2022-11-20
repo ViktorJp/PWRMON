@@ -10,7 +10,7 @@ v1.23   - (BETA TBA)
           build available on github.
         - MINOR: Small wording changes around the setup menu when it comes to installing Entware prerequisites. Added a check
           when the script starts up to ensure that all prerequisites are in place before running the script.
-        - MINOR: Added the "kW" measurement notation next to the large font numbers on page 3, in case there is any confusion
+        - MINOR: Added the "kW" measurement notation next to the large font dashboard on page 3, in case there is any confusion
           on what those digits stand for. ;)
 
 v1.22   - (October 5, 2022)
