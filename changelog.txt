@@ -1,6 +1,7 @@
-v1.26b  - (TBA)
+v1.26   - (January 11, 2023)
         - FIXED: Minor updates to take care of some "Large Font" screen (pg 3) rendering that was happening when the script
-          loses contact with the Powerwall Gateway.  Will now show "UKN %" if the battery percentage isn't available.
+          loses contact with the Powerwall Gateway.  Will now show "UKN %" if the battery percentage data isn't available
+          from the Gateway.
 
 v1.25   - (November 20, 2022)
         - ADDED: An auto-rotate option is now available by hitting the (R)otate pgs option from any of the currently 3 other
