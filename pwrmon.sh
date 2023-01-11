@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PWRMON v1.25 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022
+# PWRMON v1.26 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022
 #
 # PWRMON is a shell script that provides near-realtime stats about your Tesla Powerwall/Solar environment. This utility
 # will show all the current electrical loads being generated or consumed by your solar system, the grid, your home and
@@ -38,8 +38,8 @@
 # -------------------------------------------------------------------------------------------------------------------------
 # System Variables (Do not change beyond this point or this may change the programs ability to function correctly)
 # -------------------------------------------------------------------------------------------------------------------------
-Version=1.25
-Beta=1
+Version=1.26
+Beta=0
 LOGFILE="/jffs/addons/pwrmon.d/pwrmon.log"          # Logfile path/name that captures important date/time events - change
 APPPATH="/jffs/scripts/pwrmon.sh"                   # Path to the location of pwrmon.sh
 CFGPATH="/jffs/addons/pwrmon.d/pwrmon.cfg"          # Path to the location of pwrmon.cfg
@@ -421,6 +421,8 @@ fi
 fontprinter () {
 # $1 is the electrical load passed for home, battery, grid and solar
 # $2 is the inverse color being passed
+
+if [ -z $battcapp3 ]; then battcapp3="???"; fi
 
 # Fonts 5x6 blocks
 Number1Line1="${CClear}  $2  ${CClear}  "
@@ -2020,7 +2022,7 @@ DisplayPage3 () {
 
   # create an empty file to hold a cookie file from the Telsa Powerwall Gateway
   { echo ''
-  } > /jffs/scripts/pwrmon.cookies
+  } > /jffs/addons/pwrmon.d/pwrmon.cookies
 
   # attempt a login to the gateway and pull down some auth info for further API access
   do_login
