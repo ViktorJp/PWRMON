@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PWRMON v1.26 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022
+# PWRMON v1.27 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2023
 #
 # PWRMON is a shell script that provides near-realtime stats about your Tesla Powerwall/Solar environment. This utility
 # will show all the current electrical loads being generated or consumed by your solar system, the grid, your home and
@@ -38,7 +38,7 @@
 # -------------------------------------------------------------------------------------------------------------------------
 # System Variables (Do not change beyond this point or this may change the programs ability to function correctly)
 # -------------------------------------------------------------------------------------------------------------------------
-Version=1.26
+Version=1.27
 Beta=0
 LOGFILE="/jffs/addons/pwrmon.d/pwrmon.log"          # Logfile path/name that captures important date/time events - change
 APPPATH="/jffs/scripts/pwrmon.sh"                   # Path to the location of pwrmon.sh
@@ -241,10 +241,12 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     alertsentdown="True"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smtprecipient '<'$smtprecipient'>'
-      echo 'Subject: POWERWALL ALERT'
+      echo 'Subject: GRID DOWN'
       echo 'Content-Type: text/plain'
       echo 'X-Priority: 1 (Highest)'
       echo 'X-MSMail-Priority: High'
+      echo ''
+      echo 'POWERWALL ALERT!!!'
       echo ''
       echo 'Grid Power is DOWN at site: '$sitename
       echo 'Event time: '$(date)
@@ -263,7 +265,7 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     alertsentsync="True"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smtprecipient '<'$smtprecipient'>'
-      echo 'Subject: POWERWALL ALERT'
+      echo 'Subject: GRID SYNCING'
       echo 'Content-Type: text/plain'
       echo 'X-Priority: 1 (Highest)'
       echo 'X-MSMail-Priority: High'
@@ -288,7 +290,7 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     alertsentsync="False"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smtprecipient '<'$smtprecipient'>'
-      echo 'Subject: POWERWALL ALERT'
+      echo 'Subject: GRID NORMAL'
       echo 'Content-Type: text/plain'
       echo 'X-Priority: 1 (Highest)'
       echo 'X-MSMail-Priority: High'
@@ -351,7 +353,7 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     smsalertsentdown="True"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smsrecipient '<'$smsrecipient'>'
-      echo 'Subject: POWERWALL DOWN'
+      echo 'Subject: GRID DOWN'
       echo 'Content-Type: text/plain'
       echo ''
       echo 'Grid Power is DOWN!'
@@ -367,7 +369,7 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     smsalertsentsync="True"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smsrecipient '<'$smsrecipient'>'
-      echo 'Subject: POWERWALL SYNCING'
+      echo 'Subject: GRID SYNCING'
       echo 'Content-Type: text/plain'
       echo ''
       echo 'Grid Power is SYNCING!'
@@ -384,7 +386,7 @@ smtppasswordplaintxt=$(echo "${smtppassword}" | openssl enc -d -des3 -base64 -pa
     smsalertsentsync="False"
     { echo 'From: '$smtpusername '<'$smtpusername'>'
       echo 'To: '$smsrecipient '<'$smsrecipient'>'
-      echo 'Subject: POWERWALL NORMAL'
+      echo 'Subject: GRID NORMAL'
       echo 'Content-Type: text/plain'
       echo ''
       echo 'Grid Power status NORMAL'
