@@ -1,3 +1,9 @@
+v1.27   - (August 31, 2023)
+        - MINOR: Changed some of the notification wording that PWRMON uses when notifying you of a powerwall event via
+          email and text, to make it more obvious what kind of event you're dealing with when you first glance at the
+          notification. Having gone through Hurricane Idalia just recently made me realize that these notifications needed
+          fixing.
+
 v1.26   - (January 11, 2023)
         - FIXED: Minor updates to take care of some "Large Font" screen (pg 3) rendering that was happening when the script
           loses contact with the Powerwall Gateway.  Will now show "UKN %" if the battery percentage data isn't available
