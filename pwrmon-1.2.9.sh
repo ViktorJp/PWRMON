@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PWRMON v1.2.9 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2023
+# PWRMON v1.2.9 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2024
 #
 # PWRMON is a shell script that provides near-realtime stats about your Tesla Powerwall/Solar environment. This utility
 # will show all the current electrical loads being generated or consumed by your solar system, the grid, your home and
