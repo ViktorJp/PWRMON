@@ -1,3 +1,10 @@
+v1.2.9  - (TBA)
+        - MINOR: Changed some logic to restart the script if it has trouble connecting to the Powerwall Gateway, or if
+          certain values come back as null, indicating that it's having trouble connecting to the API. Inserted some timers
+          in certain places to give an indication that the script is waiting for services to be restored before trying
+          again.
+        - 
+
 v1.27   - (August 31, 2023)
         - MINOR: Changed some of the notification wording that PWRMON uses when notifying you of a powerwall event via
           email and text, to make it more obvious what kind of event you're dealing with when you first glance at the
