@@ -1,6 +1,7 @@
 # PWRMON
 
-PWRMON v1.27 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2023
+PWRMON v1.2.9 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2024
+![image](https://github.com/ViktorJp/PWRMON/assets/97465574/08a4205d-20cd-4d23-93ac-d8435da586ee)
 
 PWRMON is a shell script that provides near-realtime stats about your Tesla Powerwall/Solar environment. This utility will show all the current electrical loads being generated or consumed by your solar system, the grid, your home and your Powerwall(s). Electrical transmission flows are accurately being depicted using >> and << types of arrows, as electricity moves between your solar, to/from your batteries, to/from the grid and to your home. In the event of a electrical grid outage, PWRMON will calculate your estimated remaining runtime left on your batteries based on the amount of kW being consumed by your home. Weather has now been incorporated to give you a 3 day outlook on what kind of weather to expect for generation or off-grid consumption due to regional disasters or weather events.
 
