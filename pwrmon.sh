@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# PWRMON v1.27 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2023
+# PWRMON v1.2.9 - Asus-Merlin Tesla Powerwall Monitor by Viktor Jaep, 2022-2023
 #
 # PWRMON is a shell script that provides near-realtime stats about your Tesla Powerwall/Solar environment. This utility
 # will show all the current electrical loads being generated or consumed by your solar system, the grid, your home and
@@ -38,7 +38,7 @@
 # -------------------------------------------------------------------------------------------------------------------------
 # System Variables (Do not change beyond this point or this may change the programs ability to function correctly)
 # -------------------------------------------------------------------------------------------------------------------------
-Version=1.27
+Version="1.2.9"
 Beta=0
 LOGFILE="/jffs/addons/pwrmon.d/pwrmon.log"          # Logfile path/name that captures important date/time events - change
 APPPATH="/jffs/scripts/pwrmon.sh"                   # Path to the location of pwrmon.sh
@@ -1332,12 +1332,8 @@ vupdate () {
         echo -e "${CCyan}Download successful!${CClear}"
         echo -e "$(date) - PWRMON - Successfully downloaded PWRMON v$DLVersion" >> $LOGFILE
         echo ""
-        echo -e "${CYellow}Please exit, restart and configure new options using: 'pwrmon.sh -config'.${CClear}"
-        echo -e "${CYellow}NOTE: New features may have been added that require your input to take${CClear}"
-        echo -e "${CYellow}advantage of its full functionality.${CClear}"
-        echo ""
         read -rsp $'Press any key to continue...\n' -n1 key
-        return
+        exec sh /jffs/scripts/pwrmon.sh -monitor
       else
         echo ""
         echo ""
@@ -1355,12 +1351,8 @@ vupdate () {
         echo -e "${CCyan}Download successful!${CClear}"
         echo -e "$(date) - PWRMON - Successfully downloaded PWRMON v$DLVersion" >> $LOGFILE
         echo ""
-        echo -e "${CYellow}Please exit, restart and configure new options using: 'pwrmon.sh -config'.${CClear}"
-        echo -e "${CYellow}NOTE: New features may have been added that require your input to take${CClear}"
-        echo -e "${CYellow}advantage of its full functionality.${CClear}"
-        echo ""
         read -rsp $'Press any key to continue...\n' -n1 key
-        return
+        exec sh /jffs/scripts/pwrmon.sh -monitorurn
       else
         echo ""
         echo ""
@@ -1620,7 +1612,11 @@ do_login() {
     echo -e "Ensure that your Tesla Gateway at: $gatewayip is on, visible and"
     echo -e "able to be reached on this network."
     echo ""
-    exit 1
+    echo -e "Waiting 60 seconds before trying again..."
+    echo ""
+    SPIN=60
+    spinner
+    exec sh /jffs/scripts/pwrmon.sh -monitor
   fi
 }
 
@@ -1957,7 +1953,7 @@ DisplayPage3 () {
       ScreenSess=$(screen -ls | grep "pwrmon" | awk '{print $1}' | cut -d . -f 1)
       if [ -z $ScreenSess ]; then
         clear
-        echo -e "${CGreen}Executing PWRMON using the SCREEN utility...${CClear}"
+        echo -e "${CGreen}Executing PWRMON v$Version using the SCREEN utility...${CClear}"
         echo ""
         echo -e "${CCyan}IMPORTANT:${CClear}"
         echo -e "${CCyan}In order to keep PWRMON running in the background,${CClear}"
@@ -1973,7 +1969,7 @@ DisplayPage3 () {
         exit 0
       else
         clear
-        echo -e "${CGreen}Connecting to existing PWRMON SCREEN session...${CClear}"
+        echo -e "${CGreen}Connecting to existing PWRMON v$Version SCREEN session...${CClear}"
         echo ""
         echo -e "${CCyan}IMPORTANT:${CClear}"
         echo -e "${CCyan}In order to keep PWRMON running in the background,${CClear}"
@@ -2043,6 +2039,18 @@ while true; do
 
   capacity=$(curl -s -S -k -b "$cookie_file" "https://$gatewayip/api/system_status/soe")
   battcapp=$(echo $capacity | jq '.percentage' | cut -d . -f 1)
+  #If the script is unable to get a connection to get data, restart the script
+  if [ -z "$battcapp" ] || [ "$battcapp" == "" ]; then
+  	clear
+  	logoNM
+  	echo ""
+  	echo -e "${CRed}PWRMON is unable to obtain data from the Powerwall Gateway"
+  	echo -e "Waiting 60 seconds before trying again..."
+  	SPIN=60
+  	spinner
+    exec sh /jffs/scripts/pwrmon.sh -monitor
+  fi
+  
   battcapp3=$(awk "BEGIN {printf \"%03.f\",${battcapp}}")
   battmult=$(awk "BEGIN {printf \"%.2f\",${battcapp}/100}")
   battelecload=$(awk "BEGIN {printf \"%.0f\",${numpowerwalls}*5}")
