@@ -1,9 +1,9 @@
-v1.2.9  - (TBA)
-        - FIXED: Changed some logic to restart the script if it has trouble connecting to the Powerwall Gateway, or if
+v1.2.9  - (February 7, 2024)
+        - PATCH: Changed some logic to restart the script if it has trouble connecting to the Powerwall Gateway, or if
           certain values come back as null, indicating that it's having trouble connecting to the API. Inserted some timers
           in certain places to give an indication that the script is waiting for services to be restored before trying
           again.
-        - ADDED: Changed the versioning logic to align with the general accepted way of versioning, using the notation:
+        - PATCH: Changed the versioning logic to align with the general accepted way of versioning, using the notation:
           major.minor.patch ... finally, right? After seeing @thelonelycoder changing his ways, I figured it was probably
           time for me as well. All my scripts moving forward will go this route.
 
